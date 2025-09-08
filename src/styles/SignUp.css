@@ -13,7 +13,7 @@ body {
     width: 100%;
     max-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
-      url('D:\Frontend\TalentHive\Athul\freelancers\src\assets\bgmnwk.jpg'); /* Place your image in the public/images folder */
+      url('../assets/bgmnwk.jpg'); /* Place your image in the public/images folder */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
