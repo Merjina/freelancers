@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background: url('D:\Frontend\TalentHive\Athul\freelancers\src\assets\img10.jpg') center/cover no-repeat, 
+    background: url('../assets/img10.jpg') center/cover no-repeat, 
                 linear-gradient(135deg, rgba(43, 88, 118, 0.8), rgba(78, 67, 118, 0.8));
     font-family: 'Poppins', sans-serif;
     color: #fff;

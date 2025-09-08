@@ -8,7 +8,7 @@
 .hero-section {
   text-align: center;
   padding: 100px 20px;
-  background: url('D:\Frontend\TalentHive\Athul\freelancers\src\assets\bgmnwk.jpg') no-repeat center center/cover;
+  background: url('../assets//bgmnwk.jpg') no-repeat center center/cover;
   position: relative;
   color: white;
   height: 90vh;
