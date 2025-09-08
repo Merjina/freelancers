@@ -1,0 +1,132 @@
+.chat-box {
+  width: 350px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.chat-header {
+  padding: 16px;
+  background-color: #4a90e2;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+}
+
+.chat-select {
+  padding: 12px 16px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #eee;
+}
+
+.chat-select label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+}
+
+.chat-select select {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background: #fdfdfd;
+}
+
+.chat-msg {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  word-wrap: break-word;
+  font-size: 14px;
+}
+
+.chat-msg.self {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  margin-left: auto;
+  border-bottom-right-radius: 0;
+}
+
+.chat-msg.other {
+  background-color: #f1f0f0;
+  align-self: flex-start;
+  margin-right: auto;
+  border-bottom-left-radius: 0;
+}
+
+.msg-time {
+  display: block;
+  font-size: 11px;
+  color: #888;
+  margin-top: 4px;
+  text-align: right;
+}
+
+.chat-footer {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-top: 1px solid #eee;
+  background: #fafafa;
+}
+
+.chat-footer textarea {
+  width: 100%;
+  resize: none;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 60px;
+  max-height: 100px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.chat-footer button {
+  background-color: #4a90e2;
+  border: none;
+  color: white;
+  padding: 6px 8px;
+  margin-left: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-footer button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.chat-footer button i {
+  font-size: 14px;
+}

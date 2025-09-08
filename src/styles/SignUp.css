@@ -1,0 +1,142 @@
+signup.css
+
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F3EE;
+  }
+  
+  /* Signup Container (Full Page Background) */
+  .signup-container {
+    width: 100%;
+    max-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
+      url('D:\Frontend\TalentHive\Athul\freelancers\src\assets\bgmnwk.jpg'); /* Place your image in the public/images folder */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  /* Signup Wrapper (Centralized Content Box) */
+  .signup-wrapper {
+    width: 100%;
+    max-width: 400px;  /* Smaller container */
+    background: rgba(255, 255, 255, 0.75);  /* 75% translucency */
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  /* Header */
+  .signup-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #37b4ae;
+    margin-bottom: 20px;
+  }
+  
+  /* User Type Selection */
+  .user-type-selection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .user-type-btn {
+    padding: 12px 20px;
+    margin: 0 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #ddd;
+    transition: background 0.3s ease;
+  }
+  
+  .user-type-btn.active {
+    background-color: #176D69;
+    color: white;
+  }
+  
+  /* Signup Card (Form Container) */
+  .signup-card {
+    background: transparent;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+    max-height: 70vh;
+    overflow-y: auto;
+  }
+  
+  /* Form Labels */
+  .signup-form-label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  /* Input Fields */
+  .signup-form-control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #D9E4DD;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .signup-form-control:focus {
+    outline: none;
+    border-color: #176D69;
+  }
+  
+  /* Signup Button */
+  .signup-btn-primary {
+    background-color: #176D69;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .signup-btn-primary:hover {
+    background-color: #F9A602;
+  }
+  
+  /* Scrollbar Customization for Form Container */
+  .signup-card::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .signup-card::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .signup-card::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .signup-wrapper {
+      max-width: 90%;
+      padding: 20px;
+    }
+  }

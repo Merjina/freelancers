@@ -1,0 +1,116 @@
+/* Overall container with full-page background image */
+.freelancer-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('../assets/img10.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header with gradient for a modern look */
+.freelancer-header {
+  background: linear-gradient(90deg, #008080, #00b3b3);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Main content wrapper with a semi-transparent background */
+.freelancer-content {
+  display: flex;
+  flex: 1;
+  margin: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Sidebar styling */
+.freelancer-sidebar {
+  width: 220px;
+  background-color: #f9f9f9;
+  padding: 2rem 1rem;
+  border-right: 1px solid #ddd;
+}
+
+.freelancer-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.freelancer-sidebar li {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #333;
+}
+
+.freelancer-sidebar li:hover {
+  background-color: #e0f7fa;
+  transform: translateX(5px);
+}
+
+/* Main area styling */
+.freelancer-main {
+  flex: 1;
+  padding: 2rem;
+  position: relative;
+  background: url('../assets/img10.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+/* Overlay to soften the background */
+.freelancer-main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6); /* lighter for clarity */
+  z-index: 0;
+}
+
+/* Section styling */
+.freelancer-main > section {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #fff; /* opaque for better readability */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #222; /* stronger text contrast */
+}
+
+/* Section headings */
+.freelancer-main h2 {
+  margin-top: 0;
+  color: #008080;
+  font-size: 1.5rem;
+}
+
+/* Header content row */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Profile icon */
+.profile-icon {
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.profile-icon:hover {
+  color: #007bff;
+}

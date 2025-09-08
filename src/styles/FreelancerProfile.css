@@ -1,0 +1,44 @@
+.freelancer-profile-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.freelancer-profile-container h2 {
+    color: #333;
+}
+
+.profile-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.profile-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.profile-details strong {
+    color: #222;
+}
+
+.edit-profile-btn {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.edit-profile-btn:hover {
+    background-color: #0056b3;
+}

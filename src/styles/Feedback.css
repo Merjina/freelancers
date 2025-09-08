@@ -1,0 +1,165 @@
+/* Global styles for a fresh, modern look */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  padding: 0;
+}
+
+/* Container to center the form on the page */
+.feedback-container {
+  min-height: 100vh;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Card styling for the feedback form */
+.feedback-card {
+  background-color: #ffffff;
+  max-width: 400px;
+  width: 100%;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.feedback-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #007BFF;
+  margin-bottom: 20px;
+}
+
+/* Success message styling */
+.feedback-success {
+  text-align: center;
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form group for spacing */
+.feedback-group {
+  margin-bottom: 20px;
+}
+
+/* Label styling */
+.feedback-group label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Input, select, and textarea styling */
+.feedback-input,
+.feedback-select,
+.feedback-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.feedback-input:focus,
+.feedback-select:focus,
+.feedback-textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+/* Submit button styling */
+.feedback-button {
+  width: 100%;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedback-back-button {
+  background-color: #ccc; 
+  color: #333;
+  margin-top: 10px;
+}
+
+.feedback-back-button:hover {
+  background-color: #bbb;
+}
+
+.feedback-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for feedback list */
+.feedback-list {
+  margin-top: 30px;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feedback-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.feedback-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-card-body {
+  font-size: 16px;
+  color: #333;
+}
+
+.feedback-card p {
+  margin-bottom: 10px;
+}
+
+.feedback-card strong {
+  font-weight: bold;
+}
+
+.feedback-list h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.feedback-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: url("D:\Frontend\TalentHive\Athul\freelancers\src\assets\img6.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.feedback-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: -1;
+}

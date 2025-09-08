@@ -1,0 +1,119 @@
+.manage-projects-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .manage-projects-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: #2c3e50;
+  }
+  
+  /* Project Table Styling */
+  .project-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .project-table th,
+  .project-table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .project-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    font-size: 15px;
+    color: #555;
+  }
+  
+  .project-table td {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Dropdown for status */
+  .project-table td select {
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    background-color: #fff;
+  }
+  
+  /* Action Buttons */
+  .project-table td button {
+    margin: 3px;
+    padding: 6px 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  /* Individual Button Colors */
+  .project-table td button:nth-child(1) { background-color: #3498db; } /* Edit */
+  .project-table td button:nth-child(1):hover { background-color: #2980b9; }
+  
+  .project-table td button:nth-child(2) { background-color: #e74c3c; } /* Delete */
+  .project-table td button:nth-child(2):hover { background-color: #c0392b; }
+  
+  .project-table td button:nth-child(3) { background-color: #9b59b6; } /* Tag */
+  .project-table td button:nth-child(3):hover { background-color: #8e44ad; }
+  
+  .project-table td button:nth-child(4) { background-color: #2ecc71; } /* View Bids */
+  .project-table td button:nth-child(4):hover { background-color: #27ae60; }
+  
+  /* Back Button Styling */
+  .back-button {
+    margin-top: 20px;
+    padding: 10px 18px;
+    background-color: #7f8c8d;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #4d5656;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .project-table th,
+    .project-table td {
+      font-size: 13px;
+      padding: 10px;
+    }
+  
+    .project-table td button {
+      padding: 5px 8px;
+      font-size: 12px;
+      margin: 2px;
+    }
+  
+    .back-button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

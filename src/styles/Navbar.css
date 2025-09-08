@@ -1,0 +1,106 @@
+/* Navbar container */
+.navbar {
+  padding: 1rem 2rem; 
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Brand container */
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Logo Styling */
+.logo {
+  height: 50px; /* Increased size */
+  width: auto;
+  margin-right: 12px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/* Stylish Text for ReLife */
+.brand-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  color: #2c3e50;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #ff5e62, #ff9966);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease-in-out;
+}
+
+.brand-name:hover {
+  transform: scale(1.05);
+}
+
+/* Navbar links */
+.nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #2c3e50 !important;
+  margin: 0 0.7rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+/* Icons inside nav-links */
+.nav-link svg {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+
+.nav-link:hover {
+  color: #ff5e62 !important;
+}
+
+/* Login/Signup button */
+.nav-link.btn {
+  padding: 0.5rem 1.2rem;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff5e62, #ff9966);
+  color: #ffffff !important;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.nav-link.btn:hover {
+  background: linear-gradient(45deg, #ff9966, #ff5e62);
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .navbar-nav {
+      margin-top: 1rem;
+      text-align: center;
+  }
+
+  .nav-link {
+      margin: 0.7rem 0;
+      justify-content: center;
+  }
+
+  .nav-link.btn {
+      width: 100%;
+      max-width: 200px;
+      margin: 1rem auto;
+  }
+}

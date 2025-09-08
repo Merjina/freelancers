@@ -1,0 +1,22 @@
+.forgot-password-page {
+    height: 100vh;
+    background: url("https://source.unsplash.com/featured/?password-reset") no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  }
+  
+  .forgot-password-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .forgot-password-form-wrapper {
+    padding: 15px;
+  }

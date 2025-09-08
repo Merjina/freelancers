@@ -1,0 +1,122 @@
+/* General Styles */
+.post-project-container {
+    width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow:  rgba(0, 0, 0, 0.12);
+    font-family: 'Poppins', sans-serif;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #222;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+/* Form Styles */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.2);
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px 16px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #00408a);
+}
+
+/* Table Styles */
+.table-container {
+    margin-top: 25px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+thead {
+    background: #007bff;
+    color: white;
+    font-weight: 700;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Edit Project Card */
+.edit-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+    width: 350px;
+}
+
+.edit-card input,
+.edit-card textarea {
+    margin-bottom: 12px;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.edit-card button {
+    margin-right: 8px;
+    font-weight: 600;
+}
